@@ -17,18 +17,19 @@ orders_bitbay = bitbay_data()
 asks = orders_bitbay['asks']
 bids = orders_bitbay['bids']
 
-print('5 offers from bitbay\n')
-print('sale price:','\n','[exchange rate in USD],[ammount od Bitcoin]','\n')
-i = 5
-j = 5
-while i >= 0:
-    print(asks[i],'\n')
-    i -= 1    
-print('buy price:','\n','[exchange rate in USD],[ammount od Bitcoin]','\n')
-while j >= 0:
-    print(bids[j],'\n')
-    j -= 1
-    
+def show_data():
+    print('5 offers from bitbay\n')
+    print('sale price:','\n','[exchange rate in USD],[ammount od Bitcoin]','\n')
+    i = 5
+    j = 5
+    while i >= 0:
+        print(asks[i],'\n')
+        i -= 1    
+    print('buy price:','\n','[exchange rate in USD],[ammount od Bitcoin]','\n')
+    while j >= 0:
+        print(bids[j],'\n')
+        j -= 1
+show_data()
     
 def bitbay_ticker():
     url = 'https://bitbay.net/API/Public/BTC/ticker.json'
