@@ -1,0 +1,6 @@
+1)Bliższy rzeczywistości jest wykres jednej symulacji, występują na nim większe wahania, które bardziej odwzorowują prawdziwe wysokości wolumenu. Dokładniejsze wyniki zostaną uzyskane dla
+modeli o dużych wahaniach wartości wolumenu.
+2) Im większy zasób informacji, tym teoretycznie prognozowanie powinno być dokładniejsze.
+Jednak założenie modelu było takie, że z takiego okresu, z którego pobieramy informacje, taki okres symulujemy, w moim modelu, który opiera się na wstędze Bollingera,
+czyli bazuje na średniej ruchomej, im dłuższy okres symulacji, tym z każdym dniem bardziej model bazuje na samych symulacjach, więc staje się coraz bardziej "nieprawdopodobny". 
+Wpływ na wynik ma także ilość wykonanych symulacji, która im większa, powinna przybliżać do rzeczywistości, w moim modelu jednak przybliża wartości symulowanego wolumenu do wartości średniej ruchomej.
